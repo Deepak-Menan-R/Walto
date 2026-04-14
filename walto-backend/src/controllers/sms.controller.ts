@@ -142,29 +142,3 @@ export class SMSController {
 }
 
 export default new SMSController();
-
-    }
-  }
-
-  /**
-   * Delete transaction
-   */
-  async deleteTransaction(req: AuthRequest, res: Response) {
-    try {
-      const userId = req.userId!;
-      const { id } = req.params;
-
-      await transactionService.deleteTransaction(id, userId);
-
-      res.json({
-        success: true,
-        message: 'Transaction deleted',
-      });
-    } catch (error) {
-      console.error('Delete transaction error:', error);
-      res.status(500).json({ error: 'Failed to delete transaction' });
-    }
-  }
-}
-
-export default new SMSController();
