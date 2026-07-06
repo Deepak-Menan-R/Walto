@@ -1,5 +1,5 @@
 # Walto - Complete Production Guide
-## Financial Transaction Parser - Client + Backend Architecture
+## Financial Transaction Parser - Client + Backend Architecture 
 
 ---
 
