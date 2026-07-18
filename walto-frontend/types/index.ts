@@ -1,4 +1,4 @@
-export type TransactionType = 'debit' | 'credit';
+export type TransactionType = 'debit' | 'credit'; 
 
 export type ParseStatus = 'regex_parsed' | 'needs_llm' | 'llm_parsed';
 
